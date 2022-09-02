@@ -43,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
         _moveDir = cc.ReadValue<Vector2>();
         _anim.SetFloat("DirectionX", _moveDir.x);
         _anim.SetFloat("DirectionY", _moveDir.y);
+        _anim.SetFloat("AnimationSpeed", _moveDir.magnitude);
         PlayAnimState("IsRunning");
 
     }
@@ -52,12 +53,14 @@ public class PlayerMovement : MonoBehaviour
         _moveDir = cc.ReadValue<Vector2>();
         _anim.SetFloat("DirectionX", _moveDir.x);
         _anim.SetFloat("DirectionY", _moveDir.y);
+        _anim.SetFloat("AnimationSpeed", _moveDir.magnitude);
         PlayAnimState("IsRunning");
     }
 
     void MoveCanceled(InputAction.CallbackContext cc)
     {
         _moveDir = Vector2.zero;
+        _anim.SetFloat("AnimationSpeed", _moveDir.magnitude);
         PlayAnimState("IsIdle");
     }
 
