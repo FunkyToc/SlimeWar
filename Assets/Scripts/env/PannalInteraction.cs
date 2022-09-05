@@ -47,7 +47,7 @@ public class PannalInteraction : MonoBehaviour
 
     public void PlayerOut()
     {
-        StopCoroutine(ReadTxts());
+        StopCoroutine(_corout);
         txtComponent.enabled = false;
         _corout = null;
     }
