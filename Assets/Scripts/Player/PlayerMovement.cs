@@ -152,7 +152,7 @@ public partial class PlayerMovement : MonoBehaviour
             return _moveDir;
         }
 
-        return _runAction.action.ReadValue<Vector2>();
+        return _runAction.action.ReadValue<Vector2>().magnitude > 0.1f ? _runAction.action.ReadValue<Vector2>() : Vector2.zero;
     }
 
     IEnumerator RollingCancel()
@@ -173,9 +173,8 @@ public partial class PlayerMovement : MonoBehaviour
         // update
         _moveDir = GetMoveDir();
         _moveSpeed = GetMoveSpeed();
-        _anim.SetFloat("DirectionX", _moveDir.x);
-        _anim.SetFloat("DirectionY", _moveDir.y);
-        _anim.SetBool("IsRunning", false);
+        _anim.SetBool("IsRunning", _moveDir.magnitude != 0 ? true : false);
+        _anim.SetBool("IsIdle", _moveDir.magnitude == 0 ? true : false);
     }
 
     void ForceState(string anim)
