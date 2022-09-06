@@ -146,6 +146,17 @@
                 },
                 {
                     "name": "",
+                    "id": "3637c4c0-f342-40e3-b135-5b45e2d2aa0c",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "02c0d8e1-1fdb-4b94-8bf3-f8f8604e1a69",
                     "path": "<Keyboard>/space",
                     "interactions": "",
@@ -159,6 +170,17 @@
                     "name": "",
                     "id": "e9e29e13-c4a4-4a6c-b757-b525e2d35382",
                     "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fc211d12-5cde-482e-a34e-4d294460dca2",
+                    "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
