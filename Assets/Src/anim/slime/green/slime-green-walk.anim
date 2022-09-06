@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: walk
+  m_Name: slime-green-walk
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -23,7 +23,7 @@ AnimationClip:
       value: {fileID: -1186333423, guid: 8ec15f43e6189364cbefe586d06ee884, type: 3}
     - time: 0.11666667
       value: {fileID: -1870863163, guid: 8ec15f43e6189364cbefe586d06ee884, type: 3}
-    - time: 0.23333333
+    - time: 0.21666667
       value: {fileID: 118638976, guid: 8ec15f43e6189364cbefe586d06ee884, type: 3}
     - time: 0.33333334
       value: {fileID: 1729840277, guid: 8ec15f43e6189364cbefe586d06ee884, type: 3}
@@ -33,14 +33,14 @@ AnimationClip:
       value: {fileID: 228706166, guid: 8ec15f43e6189364cbefe586d06ee884, type: 3}
     - time: 0.6666667
       value: {fileID: 1028223417, guid: 8ec15f43e6189364cbefe586d06ee884, type: 3}
-    - time: 0.76666665
+    - time: 0.78333336
       value: {fileID: 1938578470, guid: 8ec15f43e6189364cbefe586d06ee884, type: 3}
     - time: 0.8833333
       value: {fileID: -291464905, guid: 8ec15f43e6189364cbefe586d06ee884, type: 3}
     - time: 1
       value: {fileID: 1866922053, guid: 8ec15f43e6189364cbefe586d06ee884, type: 3}
     attribute: m_Sprite
-    path: sprite
+    path: 
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 60
@@ -51,7 +51,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 891129758
+      path: 0
       attribute: 0
       script: {fileID: 0}
       typeID: 212
